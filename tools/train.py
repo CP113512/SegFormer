@@ -23,7 +23,9 @@ os.environ['MASTER_ADDR'] = 'localhost'
 os.environ['MASTER_PORT'] = '24444'
 # os.environ["WANDB_MODE"] = "offline"
 
-
+# wandb.init(
+#     project='uncategorized', id='30pu5a5v', resume='must'
+# )
 def parse_args():
     parser = argparse.ArgumentParser(description='Train a segmentor')
     parser.add_argument('--config', help='train config file path', type=str, default='../local_configs/slyformer/ST/slyformer2.1.t.512x512.80k.py')
@@ -71,15 +73,17 @@ def parse_args():
 
 
 def main():
-    wandb.init(
-        project='',
-        entity='wai',
-        reinit=True
-    )
+    # wandb.init(
+    #     project='uncategorized',
+    #     entity='wai',
+    #     reinit=True,
+    #     id='30pu5a5v',
+    #     resume='must'
+    # )
 
     args = parse_args()
 
-    wandb.config.update(args)
+    # wandb.config.update(args)
 
     cfg = Config.fromfile(args.config)
     if args.options is not None:

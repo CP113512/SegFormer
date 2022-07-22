@@ -4,7 +4,8 @@ log_config = dict(
     interval=100,
     hooks=[
         dict(type='TextLoggerHook'),
-        dict(type='WandbLoggerHook', init_kwargs=dict(project='Your-project')),
+        dict(type='WandbLoggerHook', init_kwargs=dict(project='uncategorized')),
+        # dict(type='WandbLoggerHook'),
     ])
 # log_config = dict(
 #     interval=100,
