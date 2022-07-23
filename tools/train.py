@@ -28,8 +28,8 @@ os.environ['MASTER_PORT'] = '24444'
 # )
 def parse_args():
     parser = argparse.ArgumentParser(description='Train a segmentor')
-    parser.add_argument('--config', help='train config file path', type=str, default='../local_configs/slyformer/ST/slyformer2.1.t.512x512.80k.py')
-    parser.add_argument('--work-dir', help='the dir to save logs and models', default='output/sly2.1-450-t-ca')
+    parser.add_argument('--config', help='train config file path', type=str, default='../local_configs/deeplabv3plus/deeplabv3plus_r18-d8_512x512_80k_rice.py')
+    parser.add_argument('--work-dir', help='the dir to save logs and models', default='output/dpr18-cp')
     parser.add_argument(
         '--load-from', help='the checkpoint file to load weights from')
     parser.add_argument(

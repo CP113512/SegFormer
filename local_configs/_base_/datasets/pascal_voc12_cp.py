@@ -1,9 +1,9 @@
 # dataset settings
 dataset_type = 'PascalVOCDataset'
-data_root = r'E:\data\ricedata_v3.0\ori'
+data_root = r'E:\data\ricedata_v3.0\cp'
 img_norm_cfg = dict(
     # mean=[148.065, 162.816, 140.347], std=[52.948, 46.524, 78.796], to_rgb=True)
-    mean=[149.7541, 164.04138, 140.3343], std= [53.861637, 47.021107, 79.13125], to_rgb=True)
+    mean=[153.7482, 166.06839, 146.52724], std=[50.995747, 44.78136, 77.066864], to_rgb=True)
 crop_size = (512, 512)
 train_pipeline = [
     dict(type='LoadImageFromFile'),

@@ -9,7 +9,7 @@ import torch
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Train a segmentor')
-    parser.add_argument('--config', help='train config file path', default='../local_configs/slyformer/ST/slyformer2.1.t.512x512.80k.py')
+    parser.add_argument('--config', help='train config file path', default='../local_configs/unet/fcn_unet_s5-d16_64x64_40k_drive.py')
     # parser.add_argument('--config', help='train config file path', default='../local_configs/segformer/B5/segformer.b5.512x512.ade.160k.py')
     # parser.add_argument('--config', help='train config file path', default='../local_configs/deeplabv3plus/deeplabv3plus_r101-d8_512x512_80k_rice.py')
     # parser.add_argument('--config', help='train config file path', default='../local_configs/slyformer/SB/slyformer.b.512x512.80k.py')
